@@ -33,7 +33,8 @@ namespace ByteBank.SistemaAgencia
             
             var contasOrdenadas = contas
                 .Where(conta => conta != null)
-                .OrderBy(conta => conta.Numero);
+                .OrderBy(conta => conta.Numero
+                );
 
             foreach (var conta in contasOrdenadas)
             {
